@@ -1,0 +1,200 @@
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Left section for the image */
+.left-section {
+    flex: 1;
+    background-color: #fafafa;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-image {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Right section for the form */
+.right-section {
+    flex: 1;
+    padding: 40px;
+    background: linear-gradient(to bottom, #e6f7ff 0%, #ffffff 100%);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button[type="submit"],
+#viewRecordsBtn,
+#createContactBtn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3897f0;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px; /* Rectangular buttons with 5px corners */
+    cursor: pointer;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #317ac9;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#responseMessage {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+    text-align: center; 
+    margin: 20px auto; 
+    display: none; 
+}
+
+
+.small-image {
+    width: 50px; 
+    height: 50px; 
+    object-fit: cover; 
+    border-radius: 5px; 
+}
+
+#viewRecordsBtn {
+    width: 100%;
+    background-color: #34a853;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+}
+
+#viewRecordsBtn:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#viewRecordsBtn:hover {
+    background-color: #2c8b43;
+}
+
+/* Message for accessing records */
+#accessRecordsMessage {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+#hereAreRecordsMessage {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Container for the records */
+#recordsContainer {
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.record {
+    background-color: #e6f7ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #b3e0ff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.record div {
+    margin-bottom: 5px;
+}
+
+.record strong {
+    color: #0073e6;
+}
+
+.image-preview-container {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-preview {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    background-color: #f0f0f0;
+}
